@@ -6,7 +6,7 @@
 
 ## 🔗 Live Demo
 
-👉 [https://neighborfit.vercel.app/](https://neighborfit.vercel.app/)
+👉 (https://neighbor-fit-zeta.vercel.app/)
 
 ---
 
