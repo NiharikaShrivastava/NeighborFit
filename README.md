@@ -1,125 +1,41 @@
-# 🏙️ NeighborFit – Neighborhood-Lifestyle Matcher
+# 🌍 NeighborFit
 
-NeighborFit is a full-stack web application that helps users find neighborhoods that best match their lifestyle preferences, such as safety, greenery, and affordability.
-
----
-
-## 📌 Features
-
-- 🎯 Collects user preferences via sliders (React frontend)
-- 🤖 Matches neighborhoods using a weighted algorithm (Express backend)
-- 📊 Ranks and displays results in real-time
-- 💡 Designed with free-tier tools and minimal data to simulate real-world problem-solving
+**NeighborFit** is a full-stack web application that helps users find neighborhoods that best match their lifestyle preferences — such as **safety**, **greenery**, and **affordability**. It provides an intuitive interface, score-based matching, and real-time results based on user-selected filters.
 
 ---
 
-## 🚀 Tech Stack
+## 🔗 Live Demo
 
-| Layer     | Technology          |
-|-----------|---------------------|
-| Frontend  | React + Tailwind CSS |
-| Backend   | Node.js + Express   |
-| API Comm  | Axios               |
-| Hosting   |  Netlify / Render |
+👉 [https://neighborfit.vercel.app/](https://neighborfit.vercel.app/)
 
 ---
 
-## 🧠 Matching Algorithm
+## 🎯 Features
 
-Each neighborhood has 3 parameters:
-- safety (1–10)
-- greenery (1–10)
-- affordability (1–10)
-
-User input weights these preferences, and the app computes a **weighted average** score for each neighborhood:
-
-score = (
-safety_input × safety_score +
-greenery_input × greenery_score +
-affordability_input × affordability_score
-) / total_input_weight
+- ✅ Select neighborhood preferences (Safety, Greenery, Affordability)
+- ✅ Match button gives you the **top ranked areas** instantly
+- ✅ Score-based results with live UI updates
+- ✅ Clean and responsive UI using **Tailwind CSS**
+- ✅ React.js frontend deployed on **Vercel**
+- 📦 Ready for backend integration (Node.js + MongoDB)
 
 ---
 
-## 🖥️ How to Run Locally
+## 🛠 Tech Stack
 
-### 📦 Backend (Express)
-
-1. Navigate to the server folder:
-    bash
-    cd server
-
-2. Install dependencies:
-    bash
-    npm install
-
-3. Start the backend server:
-    bash
-    npm start
-   Server runs at: [http://localhost:5000](http://localhost:5000)
+| Frontend      | Tools Used                             |
+|---------------|-----------------------------------------|
+| Framework     | React.js                                |
+| Styling       | Tailwind CSS                            |
+| HTTP Client   | Axios *(optional for API calls)*        |
+| Deployment    | Vercel                                   |
 
 ---
 
-### 🌐 Frontend (React)
+## 🚀 Getting Started (for local development)
 
-1. Navigate to the client folder:
-    bash
-    cd client
+### 1. Clone the repo
 
-2. Install dependencies:
-    bash
-    npm install
-
-3. Start the React app:
-    bash
-    npm start
-
-4. Open your browser at: [http://localhost:3000](http://localhost:3000)
-
----
-
-## 📦 API Endpoint
-
-### `POST /api/match`
-
-**Description:** Returns ranked neighborhoods based on user lifestyle preferences.
-
-**Request Body:**
-
-{
-  "safety": 7,
-  "greenery": 5,
-  "affordability": 8
-}
-Response:
-
-[
-  { "name": "Lajpat Nagar", "score": 6.7 },
-  { "name": "Green Park", "score": 6.3 },
-  { "name": "Cyber Hub", "score": 4.9 }
-]
-
-
-📁 Project Structure
-
-neighborfit-app/
-│
-├── client/     # React frontend (with Tailwind)
-│   └── src/
-│       ├── App.js
-│       ├── index.js
-│       └── index.css
-│
-├── server/     # Express backend
-│   ├── index.js
-│   └── package.json
-
-
-🌐 Deployment 
-Frontend: Netlify
-
-Backend: Render
-
-
-📬 Author
-Niharika Shrivastava
+```bash
+git clone https://github.com/NiharikaShrivastava/NeighborFit.git
+cd NeighborFit/client
